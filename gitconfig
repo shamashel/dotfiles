@@ -9,9 +9,6 @@
   undo-commit = reset --soft HEAD^
   unstage = reset HEAD --
 
-[commit]
-  gpgsign = true
-
 [pull]
   default = current
 
