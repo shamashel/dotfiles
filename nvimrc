@@ -227,13 +227,6 @@ let g:ale_fix_on_save = 1
 "----------------------
 " Key Bindings
 "----------------------
-" disable arrow keys in insert, normal, and visual mode
-for prefix in ['i', 'n', 'v']
-  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
-    exe prefix . "noremap " . key . " <Nop>"
-  endfor
-endfor
-
 " Ctrl-P for fzf
 nnoremap <C-p> :FZF<CR>
 
