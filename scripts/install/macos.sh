@@ -1,23 +1,5 @@
 #!/bin/bash
 
-##
-# Dock
-##
-
-# remove all the junk from the dock
-defaults write com.apple.dock persistent-apps -array
-
-# list what we want to add back, and in what order
-declare -a dock_apps=(
-  "iTerm"
-)
-
-# add some things back
-for app_name in "${dock_apps[@]}"
-do
-  defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$app_name.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-done
-
 # Don’t show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
