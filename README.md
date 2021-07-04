@@ -9,12 +9,12 @@ When installing, you have 2 main options:
 1. Just install the dotfiles (assumes you already have all the needed apps)
     - Run `install_dotfiles.sh` under the root of the project
     - Assumes the following are installed:
-        1. python3
-        2. [neovim](https://github.com/neovim/neovim) (installed via pip3 in fresh install)
-        3. [vim-plug](https://github.com/junegunn/vim-plug)
-        4. zsh (should be installed by default)
-        5. [zplug](https://github.com/zplug/zplug)
-        6. [tmux](https://github.com/tmux/tmux)
+        + python3
+        + [neovim](https://github.com/neovim/neovim) (installed via pip3 in fresh install)
+        + [vim-plug](https://github.com/junegunn/vim-plug)
+        + zsh (should be installed by default on macos)
+        + [zplug](https://github.com/zplug/zplug)
+        + [tmux](https://github.com/tmux/tmux)
 
 2. Install everything
     - Run `install_fresh.sh` under the root of this project
